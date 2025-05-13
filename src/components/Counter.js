@@ -12,7 +12,7 @@ const Counter = () => {
         return { ...state, count: state.count - state.inputValue };
 
       case "reset":
-        return { ...state, count: 0 };
+        return { ...state, count: 0, inputValue: 1 };
 
       case "setInputValue":
         return { ...state, inputValue: action.payload };
